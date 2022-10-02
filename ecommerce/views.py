@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from category.models import Category
 
 # Create your views here.
 
@@ -7,7 +8,12 @@ def home(request):
     """
     Home page with the product information
     """
-    return render(request, 'ecommerce/home.html')
+    categories = Category.objects.filter(is_active=True)
+
+    context = {
+        'categories': categories,
+    }
+    return render(request, 'ecommerce/home.html', context)
 
 
 def cart_detail_view(request):
