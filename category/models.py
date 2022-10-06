@@ -58,7 +58,5 @@ class SubCategory(models.Model):
         return self.name
 
 
-class Upload(models.Model):
-    upload_image = models.ImageField(upload_to="uploads")
 
 

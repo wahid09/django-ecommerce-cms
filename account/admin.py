@@ -10,7 +10,20 @@ class UserAdmin(BaseUserAdmin):
     list_display_links = ('name', 'username', 'email')
     readonly_fields = ('last_login', 'date_joined')
     list_filter = ('is_admin',)
-    fieldsets = ()
+    fieldsets = (
+        ('Standard info', {
+          'fields': ('password', 'name', 'username', 'email', 'phone_number')
+      }),
+      #   ('Administration', {
+      #     'fields': ('is_admin', 'is_staff', 'is_superuser', 'is_active')
+      # }),
+        ('Permissions', {
+            'fields': ('is_staff', 'is_admin', 'is_superuser', 'is_active', 'groups')
+        }),
+        ('Dates', {
+            'fields': ('date_joined', 'last_login')
+        }),
+    )
     search_fields = ('email', 'name', 'username')
     ordering = ('email', 'name', 'username', 'last_login')
     filter_horizontal = ()

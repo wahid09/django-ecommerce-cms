@@ -1,0 +1,208 @@
+{% extends 'ecommerce/index.html' %}
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <div class="d-flex align-items-start">
+            <div class="aiz-user-sidenav-wrap position-relative z-1 shadow-sm">
+                <div class="aiz-user-sidenav rounded overflow-auto c-scrollbar-light pb-5 pb-xl-0">
+                    <div class="p-4 text-xl-center mb-4 border-bottom bg-primary text-white position-relative">
+            <span class="avatar avatar-md mb-3">
+                                    <img src="https://demo.activeitzone.com/ecommerce/public/uploads/all/yPtFPf8AMEt5YELKpvQ3IjQTVPZKa49hBnT4Zdqa.png"
+                                         onerror="this.onerror=null;this.src='https://demo.activeitzone.com/ecommerce/public/assets/img/avatar-place.png';">
+                            </span>
+                        <h4 class="h5 fs-16 mb-1 fw-600">Wilma P. Hughes</h4>
+                        <div class="text-truncate opacity-60">706-482-6350</div>
+                    </div>
+
+                    <div class="sidemnenu mb-3">
+                        <ul class="aiz-side-nav-list px-2 metismenu" data-toggle="aiz-side-menu">
+
+                            <li class="aiz-side-nav-item mm-active">
+                                <a href="https://demo.activeitzone.com/ecommerce/dashboard"
+                                   class="aiz-side-nav-link active" aria-expanded="true">
+                                    <i class="las la-home aiz-side-nav-icon"></i>
+                                    <span class="aiz-side-nav-text">Dashboard</span>
+                                </a>
+                            </li>
+
+                            <li class="aiz-side-nav-item">
+                                <a href="https://demo.activeitzone.com/ecommerce/assigned-deliveries"
+                                   class="aiz-side-nav-link ">
+                                    <i class="las la-hourglass-half aiz-side-nav-icon"></i>
+                                    <span class="aiz-side-nav-text">
+                                Assigned Delivery
+                            </span>
+                                </a>
+                            </li>
+                            <li class="aiz-side-nav-item">
+                                <a href="https://demo.activeitzone.com/ecommerce/pickup-deliveries"
+                                   class="aiz-side-nav-link ">
+                                    <i class="las la-luggage-cart aiz-side-nav-icon"></i>
+                                    <span class="aiz-side-nav-text">
+                                Pickup Delivery
+                            </span>
+                                </a>
+                            </li>
+                            <li class="aiz-side-nav-item">
+                                <a href="https://demo.activeitzone.com/ecommerce/on-the-way-deliveries"
+                                   class="aiz-side-nav-link ">
+                                    <i class="las la-running aiz-side-nav-icon"></i>
+                                    <span class="aiz-side-nav-text">
+                                On The Way Delivery
+                            </span>
+                                </a>
+                            </li>
+                            <li class="aiz-side-nav-item">
+                                <a href="https://demo.activeitzone.com/ecommerce/completed-deliveries"
+                                   class="aiz-side-nav-link ">
+                                    <i class="las la-check-circle aiz-side-nav-icon"></i>
+                                    <span class="aiz-side-nav-text">
+                                Completed Delivery
+                            </span>
+                                </a>
+                            </li>
+                            <li class="aiz-side-nav-item">
+                                <a href="https://demo.activeitzone.com/ecommerce/pending-deliveries"
+                                   class="aiz-side-nav-link ">
+                                    <i class="las la-clock aiz-side-nav-icon"></i>
+                                    <span class="aiz-side-nav-text">
+                                Pending Delivery
+                            </span>
+                                </a>
+                            </li>
+                            <li class="aiz-side-nav-item">
+                                <a href="https://demo.activeitzone.com/ecommerce/cancelled-deliveries"
+                                   class="aiz-side-nav-link ">
+                                    <i class="las la-times-circle aiz-side-nav-icon"></i>
+                                    <span class="aiz-side-nav-text">
+                                Cancelled Delivery
+                            </span>
+                                </a>
+                            </li>
+                            <li class="aiz-side-nav-item">
+                                <a href="https://demo.activeitzone.com/ecommerce/cancel-request-list"
+                                   class="aiz-side-nav-link ">
+                                    <i class="las la-times-circle aiz-side-nav-icon"></i>
+                                    <span class="aiz-side-nav-text">
+                                Request Cancelled Delivery
+                            </span>
+                                </a>
+                            </li>
+                            <li class="aiz-side-nav-item">
+                                <a href="https://demo.activeitzone.com/ecommerce/total-collections"
+                                   class="aiz-side-nav-link ">
+                                    <i class="las la-comment-dollar aiz-side-nav-icon"></i>
+                                    <span class="aiz-side-nav-text">
+                                Total Collections
+                            </span>
+                                </a>
+                            </li>
+                            <li class="aiz-side-nav-item">
+                                <a href="https://demo.activeitzone.com/ecommerce/total-earnings"
+                                   class="aiz-side-nav-link ">
+                                    <i class="las la-comment-dollar aiz-side-nav-icon"></i>
+                                    <span class="aiz-side-nav-text">
+                                Total earnings
+                            </span>
+                                </a>
+                            </li>
+                            <li class="aiz-side-nav-item">
+                                <a href="https://demo.activeitzone.com/ecommerce/profile" class="aiz-side-nav-link ">
+                                    <i class="las la-user aiz-side-nav-icon"></i>
+                                    <span class="aiz-side-nav-text">Manage Profile</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="fixed-bottom d-xl-none bg-white border-top d-flex justify-content-between px-2"
+                     style="box-shadow: 0 -5px 10px rgb(0 0 0 / 10%);">
+                    <a class="btn btn-sm p-2 d-flex align-items-center"
+                       href="https://demo.activeitzone.com/ecommerce/logout">
+                        <i class="las la-sign-out-alt fs-18 mr-2"></i>
+                        <span>Logout</span>
+                    </a>
+                    <button class="btn btn-sm p-2 " data-toggle="class-toggle" data-backdrop="static"
+                            data-target=".aiz-mobile-side-nav" data-same=".mobile-side-nav-thumb">
+                        <i class="las la-times la-2x"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="aiz-user-panel">
+
+                <div class="aiz-titlebar mt-2 mb-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h1 class="h3">Dashboard</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gutters-10">
+                    <div class="col-md-3">
+                        <div class="bg-grad-1 text-white rounded-lg mb-4 overflow-hidden">
+                            <div class="px-3 pt-3 text-center">
+                                <i class="las la-shipping-fast la-4x"></i>
+                                <div class="opacity-50">Completed Delivery</div>
+                                <div class="h3 fw-700">
+                                    7
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="bg-grad-2 text-white rounded-lg mb-4 overflow-hidden">
+                            <div class="px-3 pt-3 text-center">
+                                <i class="las la-clock la-4x"></i>
+                                <div class="opacity-50">Pending Delivery</div>
+                                <div class="h3 fw-700">
+                                    4
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="bg-grad-3 text-white rounded-lg mb-4 overflow-hidden">
+                            <div class="px-3 pt-3 text-center">
+                                <i class="las la-layer-group la-4x"></i>
+                                <div class="opacity-50">Total Collected</div>
+
+                                <div class="h3 fw-700">
+                                    45
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="bg-grad-4 text-white rounded-lg mb-4 overflow-hidden">
+                            <div class="px-3 pt-3 text-center">
+                                <i class="las la-dollar-sign la-4x"></i>
+                                <div class="opacity-50">Earnings</div>
+                                <div class="h3 fw-700">
+                                    10/
+                                    <span>
+                        <small>Order</small>
+                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Category, CategorySection, SubCategory, Upload
+from .models import Category, CategorySection, SubCategory
 
 # Register your models here.
 
@@ -19,4 +19,3 @@ admin.site.register(CategorySection)
 admin.site.register(SubCategory)
 
 
-admin.site.register(Upload)
