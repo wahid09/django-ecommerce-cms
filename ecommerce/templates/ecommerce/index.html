@@ -119,7 +119,7 @@
     <div class="aiz-cookie-alert shadow-xl">
         <div class="p-3 bg-dark rounded">
             <div class="text-white mb-3">
-                <p>We use cookie for better user experience, check our policy <a href="privacypolicy.html">here</a>&nbsp;</p>
+                <p>We use cookie for better user experience, check our policy <a href="">here</a>&nbsp;</p>
             </div>
             <button class="btn btn-primary aiz-cookie-accept">
                 Ok. I Understood
@@ -131,7 +131,7 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-zoom modal-md">
             <div class="modal-content position-relative border-0 rounded-0">
                 <div class="aiz-editor-data">
-                    <p><img src="public/uploads/all/dwaK3um8tkVgEsgmZN1peQb844tFRAIQ1wAS8e3z.png" style="width: 100%;"></p>
+                    <p><img src="{% static 'public/uploads/all/dwaK3um8tkVgEsgmZN1peQb844tFRAIQ1wAS8e3z.png' %}" style="width: 100%;"></p>
                     <p style="text-align: center; "><br></p>
                     <h2 style="text-align: center; "><b>Subscribe to Our Newsletter</b></h2>
                     <p style="text-align: center;">Subscribe our newsletter for coupon, offer and exciting promotional discount..</p>
@@ -153,14 +153,14 @@
             </div>
         </div>
     </div>
-    <script data-cfasync="false" src="{% static "cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js" %}"></script>
-    <script>
-        function confirm_modal(delete_url)
-    {
-        jQuery('#confirm-delete').modal('show', {backdrop: 'static'});
-        document.getElementById('delete_link').setAttribute('href' , delete_url);
-    }
-</script>
+<!--    <script data-cfasync="false" src="{% static "cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js" %}"></script>-->
+<!--    <script>-->
+<!--        function confirm_modal(delete_url)-->
+<!--    {-->
+<!--        jQuery('#confirm-delete').modal('show', {backdrop: 'static'});-->
+<!--        document.getElementById('delete_link').setAttribute('href' , delete_url);-->
+<!--    }-->
+<!--</script>-->
     <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -198,7 +198,17 @@
     <script src="https://unpkg.com/htmx.org@1.6.1/dist/htmx.min.js"></script>
     <script src="{% static "dialog.js" %}"></script>
     <script src="{% static "toast.js" %}"></script>
-    <script src="{% static "custom.js" %}"></script>
+<!--    <script src="{% static "custom.js" %}"></script>-->
+    <script>
+        $(document).ready(function(){
+            $('.category-nav-element_back').each(function(i, el) {
+                $(el).on('mouseover', function() {
+                    if (!$(el).find('.sub-cat-menu').hasClass('loaded')) {
+                    }
+                });
+            });
+        });
+    </script>
     <script type="text/javascript">
     window.fbAsyncInit = function() {
         FB.init({

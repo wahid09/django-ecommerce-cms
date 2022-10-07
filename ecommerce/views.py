@@ -8,12 +8,7 @@ def home(request):
     """
     Home page with the product information
     """
-    categories = Category.objects.filter(is_active=True)
-
-    context = {
-        'categories': categories,
-    }
-    return render(request, 'ecommerce/home.html', context)
+    return render(request, 'ecommerce/home.html')
 
 
 def cart_detail_view(request):
